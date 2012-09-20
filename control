@@ -1,9 +1,11 @@
-Package: jp.ashikase.demo.alertatstartup
+Package: jp.ashikase.sample.alertatstartup
 Name: AlertAtStartup
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Sample - Show an alert at startup
+    This is a sample SpringBoard extension demonstrating
+    how to show an alert at startup after screen unlock.
 Maintainer: Lance Fetters
 Author: Lance Fetters
 Section: Tweaks
