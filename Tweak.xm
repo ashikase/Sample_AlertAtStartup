@@ -10,10 +10,9 @@
 @property(readonly, retain) id alertSheet;
 @end
 
-@interface SBAwayController : NSObject
-+ (id)sharedAwayController;
-//+ (id)sharedAwayControllerIfExists;
-- (void)_pendAlertItem:(id)item;
+@interface SBAlertItemsController : NSObject
++ (id)sharedInstance;
+- (void)activateAlertItem:(id)item;
 @end
 
 @interface StartupAlertItem : SBAlertItem @end
@@ -73,7 +72,7 @@
     %orig;
 
     StartupAlertItem *alertItem = [[objc_getClass("StartupAlertItem") alloc] init];
-    [[objc_getClass("SBAwayController") sharedAwayController] _pendAlertItem:alertItem];
+    [[objc_getClass("SBAlertItemsController") sharedInstance] activateAlertItem:alertItem];
     [alertItem release];
 }
 
