@@ -1,0 +1,9 @@
+Package: jp.ashikase.demo.alertatstartup
+Name: AlertAtStartup
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Lance Fetters
+Author: Lance Fetters
+Section: Tweaks
